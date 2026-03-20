@@ -1,0 +1,1 @@
+const text=document.getElementById('text'),current=document.getElementById('current'),max=document.getElementById('max');max.textContent=text.maxLength;text.oninput=()=>current.textContent=text.value.length;

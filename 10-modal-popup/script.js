@@ -1,0 +1,1 @@
+const modal=document.getElementById('modal'),openBtn=document.getElementById('openBtn'),closeBtn=document.querySelector('.close');openBtn.onclick=()=>modal.classList.add('active');closeBtn.onclick=()=>modal.classList.remove('active');window.onclick=e=>{if(e.target===modal)modal.classList.remove('active')};

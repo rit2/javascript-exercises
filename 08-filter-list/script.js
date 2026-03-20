@@ -1,0 +1,1 @@
+const search=document.getElementById('search'),items=document.querySelectorAll('#list li');search.oninput=()=>{const term=search.value.toLowerCase();items.forEach(item=>item.classList.toggle('hidden',!item.textContent.toLowerCase().includes(term)))};

@@ -1,0 +1,1 @@
+const headers=document.querySelectorAll('.accordion-header');headers.forEach(header=>{header.onclick=()=>{const content=header.nextElementSibling;const isActive=header.classList.contains('active');headers.forEach(h=>{h.classList.remove('active');h.nextElementSibling.classList.remove('active')});if(!isActive){header.classList.add('active');content.classList.add('active')}}});
